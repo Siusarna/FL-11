@@ -1,0 +1,17 @@
+$logoBackground: "../img/m-h-day.jpg";
+$fonts:("big":"Source Sans Pro", "medium":'Hind', "low":'Fresca',"standart":sans-serif);
+$underlineColor: lighten(blue,20%);
+$underlineColor2: #14A0C1;
+$bgColor:white;
+$buttonColor: #699902;
+$fontSizeBig: 60px;
+$fontSizeNormal: 30px;
+$fontSizeSmall: 15px;
+$colorText: black;
+$bgColorForSectionCard: #2C2F3C;
+$bgBanner: ("start": #699902, "end":#2C5ADC);
+$footerColor: black;
+@mixin small_text{
+  font-size: $fontSizeSmall;
+  font-family: map-get($fonts, "low");
+}

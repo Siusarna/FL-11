@@ -1,0 +1,199 @@
+body {
+  margin: 0px;
+  background-color: white; }
+
+.header-wrap {
+  background: url("../img/m-h-day.jpg");
+  background-size: 100% 100%;
+  border-radius: 0px 0px 330px 0px;
+  z-index: -2;
+  height: 100vh; }
+  .header-wrap .header_heading {
+    font-weight: bold;
+    font-size: 60px;
+    font-family: "Source Sans Pro";
+    color: black;
+    width: 434px;
+    z-index: 2;
+    position: relative;
+    margin: 0px 0px 25px 167px; }
+  .header-wrap .header_heading::after {
+    content: "";
+    background-color: #6666ff;
+    display: block;
+    height: 14px;
+    width: 58%;
+    z-index: -1;
+    position: absolute;
+    bottom: 13px; }
+
+.landing-logo img {
+  margin-left: 167px;
+  margin-top: 10px; }
+.landing-logo p {
+  word-break: break-word;
+  margin-left: 217px;
+  margin-top: -55px;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Hind";
+  color: black;
+  width: 100px;
+  height: 93px; }
+  .landing-logo p span {
+    position: relative;
+    top: -30px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-family: "Fresca";
+    font-weight: normal; }
+
+.header_text {
+  font-size: 15px;
+  font-family: "Fresca";
+  white-space: pre-line;
+  margin-left: 167px;
+  margin-bottom: 55px;
+  color: #454545; }
+
+.header_button {
+  color: black;
+  background: #699902;
+  width: 124px;
+  height: 45px;
+  border: 0px;
+  font-size: 15px;
+  margin-left: 167px; }
+
+.section_text {
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+  z-index: 1;
+  position: relative; }
+
+.section_text::after {
+  content: "";
+  background-color: #14A0C1;
+  display: block;
+  height: 14px;
+  width: 8.5%;
+  position: absolute;
+  bottom: -1px;
+  z-index: -1;
+  left: 770px; }
+
+.section_card_wrap {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-gap: 2vw;
+  justify-content: center;
+  height: 100vh; }
+  .section_card_wrap .section_card {
+    height: 66%;
+    background: #2C2F3C;
+    white-space: pre-line;
+    color: #b3b3b3;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    z-index: -2; }
+  .section_card_wrap img {
+    height: 211px;
+    width: 350px;
+    border-radius: 10px 10px 10px 10px; }
+  .section_card_wrap .section_card_heading {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin: -20px auto 10px auto;
+    position: relative;
+    height: 27px;
+    width: max-content; }
+
+.section_card_heading::after, .section_banner_heading::after {
+  content: "";
+  background-color: #14A0C1;
+  display: block;
+  height: 14px;
+  width: 100%;
+  bottom: -41px;
+  z-index: -1;
+  position: absolute; }
+
+.section_banner {
+  margin-left: auto;
+  position: relative;
+  margin-right: auto;
+  background: linear-gradient(to right, #699902, #2C5ADC);
+  border-radius: 10px 10px 10px 10px;
+  width: 63%;
+  height: 150px;
+  z-index: 0;
+  top: 55px; }
+
+.section_banner_heading {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Hind";
+  margin: 0px 0px 15px 100px;
+  padding-top: 15px;
+  color: black;
+  z-index: 2;
+  position: relative; }
+
+.section_banner_heading::after {
+  bottom: 8px;
+  left: 124px;
+  width: 7.6%; }
+
+.section_banner_text {
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "Fresca";
+  margin: 0px 0px 15px 100px;
+  color: #b3b3b3; }
+
+.section_banner_button {
+  position: relative;
+  top: -65px;
+  left: 660px;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px 5px 5px 5px;
+  background: #699902;
+  color: white;
+  font-weight: bold;
+  border: 0px; }
+
+.footer {
+  width: 100%;
+  background: black;
+  color: #b3b3b3;
+  z-index: -3; }
+
+.footer_logo.landing-logo p {
+  color: #b3b3b3;
+  word-break: break-word;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Hind";
+  margin-top: -66px; }
+  .footer_logo.landing-logo p span {
+    font-size: 15px;
+    font-family: "Fresca";
+    font-weight: normal; }
+.footer_logo.landing-logo img {
+  margin-top: 100px; }
+
+.footer_text {
+  position: absolute;
+  top: 1756px;
+  left: 45%;
+  width: 200px; }
+
+.footer-cr {
+  position: relative;
+  top: -94px;
+  left: 78%; }

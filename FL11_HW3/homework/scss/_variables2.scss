@@ -1,0 +1,17 @@
+$logoBackground: "../img/m-h-night.jpg";
+$fonts:("big":"Source Sans Pro", "medium":'Fresca', "low":'Hint',"standart":sans-serif);
+$underlineColor: lighten(red,20%);
+$underlineColor2: darken(red,20%);
+$bgColor:lighten(black,15%);
+$buttonColor: lighten(orange,10%);
+$fontSizeBig: 60px;
+$fontSizeNormal: 30px;
+$fontSizeSmall: 15px;
+$colorText: white;
+$bgColorForSectionCard: #2C2F3C;
+$bgBanner: ("start": $buttonColor, "end":$underlineColor2);
+$footerColor: $bgColorForSectionCard;
+@mixin small_text{
+  font-size: $fontSizeSmall;
+  font-family: map-get($fonts, "low");
+}

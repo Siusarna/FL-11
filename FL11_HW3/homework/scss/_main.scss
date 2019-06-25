@@ -1,0 +1,252 @@
+
+
+body{
+  margin: 0px;
+  background-color: $bgColor;
+}
+
+.header-wrap{
+  background: url($logoBackground);
+  background-size: 100% 100%;
+  border-radius: 0px 0px 330px 0px;
+  z-index: -2;
+  height: 100vh;
+
+  .header_heading{
+      font-weight: bold;
+      font-size: $fontSizeBig;
+      font-family: map-get($fonts, "big");
+      color: $colorText;
+      width: 434px;
+      z-index: 2;
+      position: relative;
+      margin: 0px 0px 25px 167px;
+  }
+
+  .header_heading::after{
+    content: "";
+    background-color: $underlineColor;
+    display: block;
+    height: 14px;
+    width: 58%;
+    z-index: -1;
+    position: absolute;
+    bottom: 13px;
+  }
+
+}
+
+.landing-logo{
+  img{
+    margin-left: 167px;
+    margin-top: 10px;
+  }
+  p{
+    @if $colorText == white{
+      white-space: nowrap;
+    }
+    @else{
+      word-break: break-word;
+    }
+    margin-left: 217px;
+    margin-top: -55px;
+    font-weight: bold;
+    font-size: $fontSizeNormal;
+    font-family: map-get($fonts, "medium");
+    color:$colorText;
+    width: 100px;
+    height: 93px;
+    span{
+      position: relative;
+      top:-30px;
+      margin-left: 10px;
+      @if $colorText == white{
+        top:15px;
+        margin-left: -64px;
+      }
+      @include small_text;
+      font-weight: normal;
+    }
+  }
+}
+
+
+
+.header_text{
+  @include small_text;
+  white-space: pre-line;
+  margin-left: 167px;
+  margin-bottom: 55px;
+  color: lighten($colorText, 27%);
+}
+
+.header_button{
+  color: $colorText;
+  background: $buttonColor;
+  width: 124px;
+  height: 45px;
+  border: 0px;
+  font-size: 15px;
+  margin-left: 167px;
+}
+
+.section_text{
+  text-align: center;
+  font-size: $fontSizeNormal;
+  color: $colorText;
+  font-weight: bold;
+  z-index: 1;
+  position: relative;
+}
+
+.section_text::after{
+  content: "";
+  background-color: $underlineColor2;
+  display: block;
+  height: 14px;
+  width: 8.5%;
+  position: absolute;
+  bottom: -1px;
+  z-index: -1;
+  left: 770px;
+}
+
+.section_card_wrap{
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-gap: 2vw;
+  justify-content: center;
+  height: 100vh;
+  .section_card{
+    height: 66%;
+    background: $bgColorForSectionCard;
+    white-space: pre-line;
+    color: darken(white, 30%);
+
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    z-index: -2;
+  }
+  img{
+      height: 211px;
+      width: 350px;
+      border-radius: 10px 10px 10px 10px;
+    }
+
+    .section_card_heading{
+      font-size: $fontSizeNormal;
+      text-align: center;
+      color:white;
+      font-weight: bold;
+      margin: -20px auto 10px auto;
+      position: relative;
+      height: 27px;
+      width: max-content;
+    }
+}
+
+
+.section_card_heading::after{
+  content: "";
+  background-color: $underlineColor2;
+  display: block;
+  height: 14px;
+  width: 100%;
+  bottom: -41px;
+  z-index: -1;
+  position: absolute;
+}
+
+.section_banner{
+  margin-left: auto;
+  position: relative;
+  margin-right: auto;
+  background: linear-gradient(to right, #699902, #2C5ADC);
+  border-radius: 10px 10px 10px 10px;
+  width: 63%;
+  height: 150px;
+  z-index: 0;
+  top: 55px;
+}
+.section_banner_heading{
+  font-size: $fontSizeNormal;
+  font-weight: bold;
+  font-family: map-get($fonts,"medium");
+  margin: 0px 0px 15px 100px;
+  padding-top: 15px;
+  color:$colorText;
+  z-index: 2;
+  position: relative;
+}
+
+.section_banner_heading::after{
+  @extend .section_card_heading::after;
+  bottom: 8px;
+  left: 124px;
+  @if $colorText == white{
+    bottom: 0px;
+    left: 108px;
+  }
+  width: 7.6%;
+}
+
+.section_banner_text{
+  font-size: $fontSizeSmall;
+  font-weight: normal;
+  font-family: map-get($fonts,"low");
+  margin: 0px 0px 15px 100px;
+  color: darken(white, 30%);
+}
+
+.section_banner_button{
+  position: relative;
+  top: -65px;
+  left: 660px;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px 5px 5px 5px;
+  background: #699902;
+  color: white;
+  font-weight: bold;
+  border: 0px;
+}
+
+.footer{
+  width: 100%;
+  background: $footerColor;
+  color: darken(white, 30%);
+  z-index: -3;
+}
+.footer_logo{
+  &.landing-logo{
+    p{
+      color: darken(white, 30%);
+      word-break: break-word;
+      font-weight: bold;
+      font-size: $fontSizeNormal;
+      font-family: map-get($fonts, "medium");
+      margin-top: -66px;
+      span{
+        @include small_text;
+        font-weight: normal;
+      }
+    }
+    img{
+      margin-top: 100px;
+    }
+
+  }
+}
+
+.footer_text{
+  position: absolute;
+  top: 1756px;
+  left: 45%;
+  width: 200px;
+}
+
+.footer-cr{
+  position: relative;
+  top: -94px;
+  left: 78%;
+}
