@@ -1,6 +1,6 @@
-const a = +prompt('enter triangles length side A');
-const b = +prompt('enter triangles length side B');
-const c = +prompt('enter triangles length side C');
+const a = +prompt('Enter triangles length side A');
+const b = +prompt('Enter triangles length side B');
+const c = +prompt('Enter triangles length side C');
 if ( isNaN(a) || isNaN(b) || isNaN(c) || a<=0 || b<=0 || c<=0 ) {
   console.log('Triangle doesn’t exist');
 } else if ( a + b <= c || a + c <= b || b + c <= a){
