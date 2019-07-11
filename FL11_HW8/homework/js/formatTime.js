@@ -13,7 +13,7 @@ function formatTime (number_minutes) {
     days = temp;
     hours -= temp*24;
   }
-  const answer = days + " day(s) " + hours + " hour(s) " + minutes + " minute(s).";
+  const answer = `${days} day(s) ${hours} hour(s) ${minutes} minute(s).`;
   return answer;
 }
 console.log(formatTime(120));

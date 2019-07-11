@@ -1,5 +1,5 @@
 function getMin(...args) {
-  let min = 999;
+  let min = Number.MAX_VALUE;
   for (var i in args) {
     if (args[i] < min){
       min = args[i];
